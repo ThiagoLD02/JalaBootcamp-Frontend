@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Challenge</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <section id="header">
+      <div class="logoImg">Logo</div>
+      <div id="headerRightSide">
+        <button>Link 1</button>
+        <button>Link 2</button>
+        <button>Link 3</button>
+      </div>
+    </section>
+    <main>
+      <section id="content">
+        <div id="Paragraths">
+          <h2>Title</h2>
+          <p>
+            Mussum Ipsum, cacilds vidis litro abertis. Aenean aliquam molestie
+            leo, vitae iaculis nisl. Morbi viverra placerat justo, vel pharetra
+            turpis. Posuere libero varius. Nullam a nisl ut ante blandit
+            hendrerit. Aenean sit amet nisi. Mais vale um bebadis conhecidiss,
+            que um alcoolatra anonimis.
+          </p>
+        </div>
+
+        <div id="list">
+          <h4>Here is the list title</h4>
+          <ul>
+            <li>This is an item of the list</li>
+            <li>This is another item of the list</li>
+          </ul>
+        </div>
+        <div id="form">
+          <h3>This is the Form</h3>
+          <form class="form">
+            <div class="formItem">
+              <h5>Name:</h5>
+              <input type="text" name="name" id="nameInput" />
+            </div>
+            <div class="formItem">
+              <h5>Email:</h5>
+              <input type="email" name="email" id="emailInput" />
+            </div>
+            <div class="formItem">
+              <h5>User:</h5>
+              <input type="text" name="user" id="userInput" />
+            </div>
+            <div class="formItem">
+              <h5>Password:</h5>
+              <input type="password" name="password" id="passwordInput" />
+            </div>
+            <div class="formItem">
+              <h5>Confirm password:</h5>
+              <input
+                type="password"
+                name="confirmPassword"
+                id="confirmPasswordInput"
+              />
+            </div>
+            <div class="formItem">
+              <h5>Birthday month</h5>
+              <input type="month" name="month" id="monthInput" />
+            </div>
+            <div class="formItem">
+              <h5>Country you are working from</h5>
+              <select class="select" name="countrySelect">
+                <option value="brasil">Brasil</option>
+                <option value="bolivia">Bolivia</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div>
+              <h5>Are you Brazilian?</h5>
+              <input type="checkbox" />
+            </div>
+          </form>
+
+          <button type="submit">Save information</button>
+        </div>
+
+        <div id="insertItem">
+          <div class="item" id="1">
+            <h3>This is the item title</h3>
+            <p>
+              Mussum Ipsum, cacilds vidis litro abertis. Praesent vel viverra
+              nisi. Mauris aliquet nunc non turpis scelerisque, eget. Praesent
+              malesuada urna nisi, quis volutpat erat hendrerit non. Nam
+              vulputate dapibus. Aenean aliquam molestie leo, vitae iaculis
+              nisl. Atirei o pau no gatis, per gatis num morreus.
+            </p>
+          </div>
+
+          <div class="item" id="2">
+            <h3>This is the item title</h3>
+            <p>
+              Mussum Ipsum, cacilds vidis litro abertis. Praesent vel viverra
+              nisi. Mauris aliquet nunc non turpis scelerisque, eget. Praesent
+              malesuada urna nisi, quis volutpat erat hendrerit non. Nam
+              vulputate dapibus. Aenean aliquam molestie leo, vitae iaculis
+              nisl. Atirei o pau no gatis, per gatis num morreus.
+            </p>
+          </div>
+
+          <div class="item" id="3">
+            <h3>This is the item title</h3>
+            <p>
+              Mussum Ipsum, cacilds vidis litro abertis. Praesent vel viverra
+              nisi. Mauris aliquet nunc non turpis scelerisque, eget. Praesent
+              malesuada urna nisi, quis volutpat erat hendrerit non. Nam
+              vulputate dapibus. Aenean aliquam molestie leo, vitae iaculis
+              nisl. Atirei o pau no gatis, per gatis num morreus.
+            </p>
+          </div>
+
+          <button>Add another item</button>
+        </div>
+      </section>
+    </main>
+    <section id="footer">
+      <div id="footerLeftSide">
+        <a class="logoImg">Logo</a>
+        <p>
+          Mussum Ipsum, cacilds vidis litro abertis. Aenean aliquam molestie
+          leo, vitae iaculis nisl. Morbi viverra placerat justo, vel pharetra
+          turpis. Posuere libero varius. Nullam a nisl ut ante blandit
+          hendrerit. Aenean sit amet nisi. Mais vale um bebadis conhecidiss, que
+          um alcoolatra anonimis.
+        </p>
+      </div>
+
+      <div id="footerRightSide">
+        <h6 class="footerH6">All rights reserved</h6>
+        <h6 class="footerH6">Jalasoft 2024</h6>
+      </div>
+    </section>
+  </body>
+  <script>
+    document.getElementsByClassName("item").addEventListener("click", (e) => {
+      console.log(e);
+    });
+  </script>
+</html>
