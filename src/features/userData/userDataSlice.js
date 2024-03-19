@@ -22,9 +22,24 @@ export const counterSlice = createSlice({
       };
       state.push(newUser);
     },
+    deleteUser: (state, action) => {
+      const email = action.payload;
+      console.log(email);
+      const index = state.findIndex((user) => user.email === email);
+      if (index !== -1) {
+        state.splice(index, 1);
+      }
+    },
+    update: (state, action) => {
+      const payload = action.payload;
+      const index = state.findIndex((user) => user.email === payload.email);
+      if (index !== -1) {
+        state[index] = payload;
+      }
+    },
   },
 });
 
-export const { create } = counterSlice.actions;
+export const { create, deleteUser, update } = counterSlice.actions;
 
 export default counterSlice.reducer;

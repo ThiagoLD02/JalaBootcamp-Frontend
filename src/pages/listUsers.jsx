@@ -1,9 +1,8 @@
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { Cards } from "../components/cards";
 
 export default function ListUsers() {
-  const userData = useSelector((state) => state.userData);
-
   return (
     <main
       style={{
@@ -79,27 +78,7 @@ export default function ListUsers() {
           padding: 50,
         }}
       >
-        {userData.map((user) => (
-          <div
-            style={{
-              backgroundColor: "whitesmoke",
-              padding: 30,
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              borderRadius: 8,
-            }}
-          >
-            <div key={user.email}>
-              <p>
-                <strong>Name:</strong> {user.name}
-              </p>
-              <p>
-                <strong>Email:</strong> {user.email}
-              </p>
-            </div>
-          </div>
-        ))}
+        <Cards />
       </section>
     </main>
   );
